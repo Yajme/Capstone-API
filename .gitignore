@@ -1,0 +1,39 @@
+# Ignore composer dependencies
+/vendor/
+
+# Ignore build artifacts
+/build/
+/dist/
+
+# Ignore environment-specific files
+.env
+.env.*
+
+# Ignore logs
+/log/
+
+# Ignore cache files
+/cache/
+
+# Ignore session files
+/sessions/
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+
+# Ignore user-specific configuration files
+/.user.ini
+
+# Ignore compiled PHP files
+*.phpc
+
+# Ignore backup files
+*.bak
+*.swp
+*.swo
+*.~
+
+# Ignore database files
+*.sqlite
+*.db
