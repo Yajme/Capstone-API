@@ -35,6 +35,7 @@ Learn what APIs are and how they work.
 |-------|---------------  |
 |What is API?| :book: [What is an API: Definition, Types, Specifications, Documentation](https://www.altexsoft.com/blog/what-is-api-definition-types-specifications-documentation/)   |
 |APIs Explained | 🎬 [APIs Explained in 4 minutes](https://www.youtube.com/watch?v=bxuYDT-BWaI) |
+|REST vs SOAP vs WEB API | :clapper: [Difference Between REST API vs Web API vs SOAP API Explained](https://www.youtube.com/watch?v=2mqN7ZhDsUA) | 
 
 API explained in one image:
 ![1 9rLvCcHqyMu_LdyM0JlNfw](https://github.com/Yajme/Capstone-API/assets/88352665/6fb5f50b-d43a-4047-a186-d4ed9076aa27)
