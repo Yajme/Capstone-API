@@ -181,6 +181,18 @@ if(isset($_GET['contamination'])){
 }
 ?>
 ```
+
+Sample Output:
+```
+http://localhost/capstone-api/?contamination=4
+```
+```json
+{
+    "level": 10,
+    "contamination_id": "4",
+    "contamination_name": "johndone"
+}
+```
 <!--
 Authentication:
 ---
