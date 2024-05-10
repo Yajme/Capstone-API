@@ -117,5 +117,7 @@ output:
 >Go to http://localhost/capstone-api/gateway
 
 >Using your postman or browser
+![image](https://github.com/Yajme/Capstone-API/assets/88352665/0a433f30-0893-4089-9786-ca7d9d422724)
+![image](https://github.com/Yajme/Capstone-API/assets/88352665/4943f98a-ed7c-4427-9e33-286aa972ac13)
 
 > If there is no error, you are good to go
