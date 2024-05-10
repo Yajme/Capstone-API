@@ -7,7 +7,7 @@
 
 # Ignore environment-specific files
 .env
-.env.*
+
 
 # Ignore logs
 /log/
