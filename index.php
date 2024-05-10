@@ -7,10 +7,17 @@ $parts = explode('/', $_SERVER['REQUEST_URI']);
 //Controller for routing
 //Gateway is for handling the database
 
+$controller = null;
 
 spl_autoload_register(function ($class) {
     require __DIR__ . '/src/' . str_replace('\\', '/', $class) . '.php';
 });
+//Gets the second part of the url
+//e.g. /capstone-api/hello
+//    ^       ^         ^
+//    |       |         |
+//   [0]     [1]       [2]
+//For determining what route the middleware directs to
 switch ($parts[2]) {
     case 'api':
         
