@@ -104,6 +104,18 @@ output:
 
 >Copy the format in .env.example to .env
 
+
 >Fill the fields according to your machine.
 
+![image](https://github.com/Yajme/Capstone-API/assets/88352665/e979a507-f6d9-45cb-a211-73b622c6149e)
 
+
+## Testing connection to the database
+
+> Make sure to import the aquaguard.sql to your phpmyadmin
+
+>Go to http://localhost/capstone-api/gateway
+
+>Using your postman or browser
+
+> If there is no error, you are good to go
