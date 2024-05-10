@@ -12,7 +12,12 @@ class SampleGateway extends Database
 
     public function getSampleData()
     {
-        echo json_encode("Hello World");
+        $response = array(
+            'hello' => 'world',
+            'api' =>'using php',
+            'Connection Established?' => isset($this->connection)
+        );
+        echo json_encode($response,JSON_PRETTY_PRINT);
     }
 }
 ?>
