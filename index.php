@@ -20,6 +20,11 @@ spl_autoload_register(function ($class) {
 //For determining what route the middleware directs to
 
 switch ($parts[2]) {
+    case 'maintenance':
+        $controller = new SampleController(new SampleGateway);
+        $id = $parts[3] ?? null;
+        $controller->retrieveMaintenance($_SERVER['REQUEST_METHOD'], $id);
+        break;
     case 'api':
         
         break;
@@ -31,6 +36,7 @@ switch ($parts[2]) {
     case '':
         echo 'you seem lost';
         break;
+   
     default:
         http_response_code(404);
         exit;
