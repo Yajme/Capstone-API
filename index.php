@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 declare(strict_types=1);
 
 header("Content-Type: application/json; charset=UTF-8");
@@ -25,25 +26,27 @@ switch ($parts[2]) {
         $id = $parts[3] ?? null;
         $controller->retrieveMaintenance($_SERVER['REQUEST_METHOD'], $id);
         break;
+    case 'prediction':
+        $controller = new SampleController(new SampleGateway);
+        $id = $parts[3] ?? null;
+        $controller->retrievePrediction($_SERVER['REQUEST_METHOD'], $id);
+        break;
+
+
     case 'api':
-        
+
         break;
     case 'gateway':
-       
+
         $sample = new SampleGateway();
         $sample->getSampleData();
         break;
     case '':
         echo 'you seem lost';
         break;
-   
+
     default:
         http_response_code(404);
         exit;
         break;
 }
-
-
-
-?>
-
