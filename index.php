@@ -22,12 +22,12 @@ spl_autoload_register(function ($class) {
 
 switch ($parts[2]) {
     case 'maintenance':
-        $controller = new SampleController(new SampleGateway);
+        $controller = new maintenanceController(new maintenanceGateway);
         $id = $parts[3] ?? null;
         $controller->retrieveMaintenance($_SERVER['REQUEST_METHOD'], $id);
         break;
     case 'prediction':
-        $controller = new SampleController(new SampleGateway);
+        $controller = new predictionsController(new predictionsGateway);
         $id = $parts[3] ?? null;
         $controller->retrievePrediction($_SERVER['REQUEST_METHOD'], $id);
         break;
