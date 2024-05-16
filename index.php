@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 declare(strict_types=1);
 
 header("Content-Type: application/json; charset=UTF-8");
@@ -20,24 +21,32 @@ spl_autoload_register(function ($class) {
 //For determining what route the middleware directs to
 
 switch ($parts[2]) {
+    case 'maintenance':
+        $controller = new maintenanceController(new maintenanceGateway);
+        $id = $parts[3] ?? null;
+        $controller->retrieveMaintenance($_SERVER['REQUEST_METHOD'], $id);
+        break;
+    case 'prediction':
+        $controller = new predictionsController(new predictionsGateway);
+        $id = $parts[3] ?? null;
+        $controller->retrievePrediction($_SERVER['REQUEST_METHOD'], $id);
+        break;
+
+
     case 'api':
-        
+
         break;
     case 'gateway':
-       
+
         $sample = new SampleGateway();
         $sample->getSampleData();
         break;
     case '':
         echo 'you seem lost';
         break;
+
     default:
         http_response_code(404);
         exit;
         break;
 }
-
-
-
-?>
-
